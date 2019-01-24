@@ -60,8 +60,8 @@ ostream & operator<<(ostream & wy, const Napis & n)
 
 istream & operator >> (istream & we, Napis & n)
 {
-	string str;
+	char str[100];
 	we >> str;
-	n.Ustaw(str.c_str());
+	n.Ustaw(str);
 	return we;
 }
